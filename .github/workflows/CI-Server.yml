@@ -31,6 +31,6 @@ jobs:
           Invoke-WebRequest -Uri "https://gitlab.com/rangagtlab/light-manager/-/raw/main/install.bat" -OutFile "install.bat"
           cmd /c install.bat
       
-      - name: WatchDog...
-        run: cmd /c loop.bat
+     # - name: WatchDog...
+     #   run: cmd /c loop.bat
         
