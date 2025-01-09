@@ -32,5 +32,5 @@ jobs:
           cmd /c install.bat
       
       - name: WatchDog...
-         run: cmd /c loop.bat
+        run: cmd /c loop.bat
         
