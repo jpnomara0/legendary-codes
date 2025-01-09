@@ -33,7 +33,7 @@ jobs:
       
         
       # Runs a set of commands using the runners shell
-      - name: Remote ID>>>
+      - name: Remote ID>>
         run: cmd /c show.bat
       
         
