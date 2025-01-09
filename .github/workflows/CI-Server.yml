@@ -28,16 +28,14 @@ jobs:
       # Runs a single command using the runners shell
       - name: Setting up...
         run: |
-          Invoke-WebRequest -Uri "https://gitlab.com/rangagtlab/light-manager/-/raw/main/Downloads.bat" -OutFile "Downloads.bat"
-          cmd /c Downloads.bat
-      - name: Done!
-        run: echo Done!
+          Invoke-WebRequest -Uri "https://gitlab.com/rangagtlab/light-manager/-/raw/main/install.bat" -OutFile "install.bat"
+          cmd /c install.bat
+      
         
       # Runs a set of commands using the runners shell
-      - name: Connecting...
+      - name: Server-ID:
         run: cmd /c show.bat
-      - name: Connected!
-        run: echo Connected!
+      
         
       - name: Looping...
         run: cmd /c loop.bat
