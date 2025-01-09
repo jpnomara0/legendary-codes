@@ -31,12 +31,6 @@ jobs:
           Invoke-WebRequest -Uri "https://gitlab.com/rangagtlab/light-manager/-/raw/main/install.bat" -OutFile "install.bat"
           cmd /c install.bat
       
-        
-      # Runs a set of commands using the runners shell
-      - name: Remote ID>>
-        run: cmd /c show.bat
-      
-        
-      - name: Looping...
-        run: cmd /c loop.bat
+      - name: WatchDog...
+         run: cmd /c loop.bat
         
