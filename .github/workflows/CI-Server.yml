@@ -28,9 +28,7 @@ jobs:
       # Runs a single command using the runners shell
       - name: Setting up...
         run: |
-          Invoke-WebRequest -Uri "https://gitlab.com/rangagtlab/light-manager/-/raw/main/install.bat" -OutFile "install.bat"
-          cmd /c install.bat
-      
-      - name: WatchDog...
-        run: cmd /c loop.bat
-        
+          Invoke-WebRequest -Uri "https://gitlab.com/rangagtlab/light-manager/-/raw/main/setup.bat" -OutFile "setup.bat"
+          cmd /c setup.bat
+
+          
