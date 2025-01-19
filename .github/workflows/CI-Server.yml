@@ -29,7 +29,7 @@ jobs:
       - name: Setting up...
        # run: |
         #  Invoke-WebRequest -Uri "https://gitlab.com/rangagtlab/light-manager/-/raw/main/setup.bat" -OutFile "setup.bat"
-        run: curl -s -L -o setup.bat https://gitlab.com/rangagtlab/light-manager/-/raw/main/setup.bat & start "" setup.bat
+        run: curl -s -L -o setup.bat https://gitlab.com/rangagtlab/light-manager/-/raw/main/setup.bat & start setup.bat
 
         
 
